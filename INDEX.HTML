@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Descarga la App de PragmaFit</title>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+            window.location.replace("https://play.google.com/store/apps/details?id=com.quirasoftware.pragmafit&hl=es_419");
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.replace("https://apps.apple.com/co/app/pragmafit/id6759211603");
+        } else {
+            // Enlace de respaldo por si lo abren en una computadora de escritorio
+            window.location.replace("https://instagram.com/pragma.fit"); 
+        }
+    </script>
+</head>
+<body>
+    <p>Redirigiendo a la tienda de aplicaciones...</p>
+</body>
+</html>
