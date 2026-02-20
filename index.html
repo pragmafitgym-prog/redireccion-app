@@ -5,8 +5,8 @@
     <title>Descarga la App de PragmaFit</title>
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        if (/android/i.test(userAgent)) {
-            window.location.replace("market://details?id=com.quirasoftware.pragmafit");
+       if (/android/i.test(userAgent)) {
+            window.location.replace("intent://play.google.com/store/apps/details?id=com.quirasoftware.pragmafit#Intent;scheme=https;package=com.android.vending;end");
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
             window.location.replace("https://apps.apple.com/co/app/pragmafit/id6759211603");
         } else {
@@ -19,4 +19,5 @@
     <p>Redirigiendo a la tienda de aplicaciones...</p>
 </body>
 </html>
+
 
